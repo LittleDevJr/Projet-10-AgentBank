@@ -36,7 +36,6 @@ html {
   }
   
   .main-nav {
-    border : solid 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +74,7 @@ html {
   }
   
   .hero {
-    background-image: url('../img/bank-tree.jpeg');
+    background-image: url('../../my-react-app/src/assets/bank-tree.webp');
     background-position: 0 -50px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,9 +126,9 @@ html {
     }
   }
   
-  .features {
+   .features {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   @media (min-width: 920px) {
