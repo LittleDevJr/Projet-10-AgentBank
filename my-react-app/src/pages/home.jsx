@@ -1,5 +1,5 @@
 import React from "react";
-import FeaturesItem from "./features";
+import FeaturesItem from "../components/features";
 import icon1 from "../assets/icon-chat.webp";
 import icon2 from "../assets/icon-money.webp";
 import icon3 from "../assets/icon-security.webp";
