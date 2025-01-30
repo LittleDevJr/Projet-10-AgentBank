@@ -46,6 +46,22 @@
     background-color: #00bc77;
     color: #fff;
   }
+
+  .label{
+    margin-right : 10px;
+  }
+
+  .labelContainer{
+    margin-bottom : 20px;
+  }
+
+  .saveButton,
+  .cancelButton{
+    margin-right: 20px;
+    border-radius : 37px;
+    width : 100px;
+    height : 40px;
+  }
   
   @media (min-width: 720px) {
     .account {

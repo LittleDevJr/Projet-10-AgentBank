@@ -27,3 +27,9 @@
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
+
+@media (max-width: 920px) {
+  .features {
+    flex-direction: column;
+  }
+}

@@ -73,7 +73,10 @@ html {
       font-size: 1.2rem;
     }
   
-  
+    .sign-in-icon {
+      font-size: 5rem;
+      margin-top : 20px;
+    }
   
   
   .sign-in-button {

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../redux/actions/authActions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 function SignIn({ login, isAuthenticated, error }) {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
@@ -25,6 +27,7 @@ function SignIn({ login, isAuthenticated, error }) {
   return (
     <div>
       <main className="main bg-dark">
+        <FontAwesomeIcon icon={faUserCircle} className="sign-in-icon" />
         <section className="sign-in-content">
           <h1>Sign In</h1>
           <form onSubmit={handleSubmit}>

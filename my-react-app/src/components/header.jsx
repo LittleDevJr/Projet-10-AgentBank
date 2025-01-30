@@ -1,4 +1,4 @@
-// components/Header.js
+
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,6 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Header({ isAuthenticated, user, logout }) {
-  console.log('User:', user);
   return (
     <nav className="main-nav">
       <Link className="main-nav-logo" to="/">
@@ -20,7 +19,7 @@ function Header({ isAuthenticated, user, logout }) {
         {isAuthenticated ? (
           <>
             <FontAwesomeIcon icon={faUserCircle} className="fa fa-user-circle" />
-            <span> {user.firstName}</span>
+            <span> {user.userName}</span>
             <Link to="/sign-in" onClick={logout} className="main-nav-item">
             <FontAwesomeIcon icon={faSignOutAlt} className="exitIcon"/>
              Sign Out 
